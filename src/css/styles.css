@@ -15,11 +15,116 @@
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: rgba(181, 180, 181, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 60px;
+  background-color: #403240;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input {
+  min-width: 200px;
+  padding: 8px 16px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  background-color: rgb(253, 235, 251);
+}
+
+.search-btn {
+  border: none;
+  background-color: rgb(202, 167, 184);
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.search-btn svg {
+  fill: none;
+  stroke: rgb(38, 36, 38);
+}
+
+.search-btn svg:hover,
+.search-btn svg:focus {
+  stroke: #050405;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.photo-card {
+  margin: 10px;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(71, 71, 71, 0.1);
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.info {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+}
+
+.info-item {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.load-more {
+  margin: 24px;
+  padding: 8px 16px;
+  display: none;
+  background: none;
+  border: solid 1px #a7739b;
+  border-radius: 4px;
+  color: #955b8a;
+  cursor: pointer;
+}
+
+.load-more:hover,
+.load-more:focus {
+  color: #fff;
+  background-color: #905e88;
 }
